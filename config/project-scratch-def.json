@@ -1,12 +1,9 @@
 {
-    "orgName": "CCLT_SCRACH",
-    "edition": "Developer",
-    "OrgPreferences": {
-      "S1DesktopEnabled": true
-    }
+    "orgName": "Sample Org",
+    "edition": "developer",
     "settings": {
-        "lightningExperienceSettings": {
-            "enableS1DesktopEnabled": true
-        }
+      "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+      }
     }
 }
