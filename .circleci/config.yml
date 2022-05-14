@@ -45,7 +45,7 @@ jobs:
           name: Setup Org
           command: |
             echo 'Running tests'
-            sfdx force:auth:jwt:grant --clientid 3MVG95mg0lk4batiP7Q5f8gZVROjIpEdZTXE4KJq1GSPA1m3YnoYLxWam8g2CqZOnH_zQRI3V.mvN7LyD10cw --jwtkeyfile assets/server.key --username creativecontentlabtokyo.dev@gmail.com --setdefaultdevhubusername -a my-hub-org
+            sfdx force:auth:jwt:grant --clientid $HUB_CONSUMER_KEY --jwtkeyfile assets/server.key --username $HUB_SFDC_USER --setdefaultdevhubusername -a my-hub-org
             sfdx force --help
             sfdx force:org:create -s -f ~/ci_app/config/project-scratch-def.json -a circle_build_$CIRCLE_BUILD_NUM --wait 3
             sfdx force:source:push -u circle_build_$CIRCLE_BUILD_NUM
