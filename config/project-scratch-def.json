@@ -4,4 +4,9 @@
     "OrgPreferences": {
       "S1DesktopEnabled": true
     }
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        }
+    }
 }
